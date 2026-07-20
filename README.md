@@ -1,18 +1,23 @@
-# orion:block_containers
+# Orion Block Containers
 
-Baús e barris. Depende de `orion:containers` + `orion:inventory`.
+Chest and barrel block containers.
+
+- **Manifest id:** `orion:block_containers`
+- **Provides:** `orion:block_containers`
+- **Depend:** `orion:containers`, `orion:inventory`
 
 ## Build
 
 ```bash
-# Via menu em Plugins-Orion/
-./build-plugins.sh
-# ou:
-dotnet build OrionBlockContainers.csproj
+dotnet build OrionBlockContainers.csproj -c Release
 ```
 
-Evento cancelável: `PlayerOpenContainerSignal` (antes de abrir a UI).
+Deploy this plugin plus its dependencies under `plugins/{id}/`.
 
-## Provides
+## Events
 
-- `orion:block_containers`
+Cancelable `PlayerOpenContainerSignal` fires before the container UI opens.
+
+## CI
+
+GitHub Actions builds `orion-containers` and `orion-inventory`, then smoke-boots the server with all three plugins loaded.

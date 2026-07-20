@@ -1,10 +1,11 @@
-using Orion.Block.Traits;
 using Orion.PluginContracts;
 
 namespace OrionBlockContainers;
 
 /// <summary>
-/// Vanilla chest/barrel block containers. Depends on VanillaContainers + OrionInventory.
+/// Vanilla chest/barrel block containers (S7 Api-only shell).
+/// Full BlockTraitBase chest/barrel open + NBT sync returns once IBlock lifecycle
+/// hooks cover OnInteract/OnRead without Orion.Block.BlockTrait.
 /// </summary>
 public sealed class OrionBlockContainersPlugin : IOrionPlugin
 {
@@ -12,11 +13,7 @@ public sealed class OrionBlockContainersPlugin : IOrionPlugin
 
     public Version Version { get; } = new(1, 0, 0);
 
-    public void Load(IPluginLoadContext context)
-    {
-        _ = context;
-        BlockTraitRegistry.RegisterFromAssembly(typeof(OrionBlockContainersPlugin).Assembly);
-    }
+    public void Load(IPluginLoadContext context) => _ = context;
 
     public void OnEnable(IPluginContext context) => _ = context;
 
