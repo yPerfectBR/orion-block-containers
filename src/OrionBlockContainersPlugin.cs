@@ -8,7 +8,7 @@ namespace OrionBlockContainers;
 /// </summary>
 public sealed class OrionBlockContainersPlugin : IOrionPlugin
 {
-    public string Id => "orion:block-containers";
+    public string Id => "orion:block_containers";
 
     public Version Version { get; } = new(1, 0, 0);
 

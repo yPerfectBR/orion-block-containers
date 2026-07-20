@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>OrionBlockContainers</RootNamespace>
-    <AssemblyName>orion.block-containers</AssemblyName>
+    <AssemblyName>orion.block_containers</AssemblyName>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>$(MSBuildThisFileDirectory)bin\</OutputPath>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
