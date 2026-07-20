@@ -1,7 +1,6 @@
 {
-  "id": "orion:block-containers",
+  "id": "orion:block_containers",
   "version": "1.0.0",
-  "api": "0.1.0",
   "description": "Chest and barrel block containers.",
   "authors": ["Orion"],
   "main": "OrionBlockContainers.OrionBlockContainersPlugin",
@@ -10,5 +9,5 @@
     { "id": "orion:inventory", "versions": ["1.0.0", "99.0.0"] }
   ],
   "softdepend": [],
-  "provides": ["orion:block-containers"]
+  "provides": ["orion:block_containers"]
 }
