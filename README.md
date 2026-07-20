@@ -1,15 +1,18 @@
-# VanillaContainerBlocks
+# orion:block_containers
 
-Baús e barris vanilla. **`depend: ["VanillaContainers", "VanillaInventory"]`**.
+Baús e barris. Depende de `orion:containers` + `orion:inventory`.
 
 ## Build
 
 ```bash
-dotnet build plugins/VanillaContainerBlocks/VanillaContainerBlocks.csproj
+# Via menu em Plugins-Orion/
+./build-plugins.sh
+# ou:
+dotnet build OrionBlockContainers.csproj
 ```
 
 Evento cancelável: `PlayerOpenContainerSignal` (antes de abrir a UI).
 
 ## Provides
 
-- `orion:block-containers`
+- `orion:block_containers`
